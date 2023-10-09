@@ -19,7 +19,7 @@ botao_avancar.addEventListener('click', resetar)
 
 //Funções de evento
 n1.addEventListener('keyup', function(x){ //validação se o valor (A) é negativo ou se há dados no campo
-    if(n1.value < 0){
+    if(parseInt(n1.value) < 0){
         //removendo mensagens/itens anteriores
         document.getElementById('igual-message').style.display = 'none'
         document.getElementById('btn-avancar').style.display = 'none'
@@ -32,12 +32,13 @@ n1.addEventListener('keyup', function(x){ //validação se o valor (A) é negati
         //Mostrando mensagem de valor negativo
         document.getElementById('valor_negativo').style.display = 'block'
         n1.classList.add('error')
-
+        document.querySelector('input#btn-verificar').style.display = 'none'
     }
-    if (n1.value >= 0 && n2.value >= 0){
+    if (parseInt(n1.value) >= 0 && parseInt(n2.value) >= 0){
         document.getElementById('valor_negativo').style.display = 'none'
+        document.querySelector('input#btn-verificar').style.display = 'block'
     }
-    if (n1.value >= 0){
+    if (parseInt(n1.value) >= 0){
         n1.classList.remove('error')
         n1.classList.remove('valores-iguais')
         n1.classList.remove('sucess')
@@ -45,7 +46,7 @@ n1.addEventListener('keyup', function(x){ //validação se o valor (A) é negati
 })
 
 n2.addEventListener('keyup', function(y){ //validação se o valor (B) é negativo
-    if(n2.value < 0){
+    if(parseInt(n2.value) < 0){
         //removendo mensagens/itens anteriores
         document.getElementById('igual-message').style.display = 'none'
         document.getElementById('btn-avancar').style.display = 'none'
@@ -57,15 +58,14 @@ n2.addEventListener('keyup', function(y){ //validação se o valor (B) é negati
         //Mostrando mensagem de valor negativo
         document.getElementById('valor_negativo').style.display = 'block'
         n2.classList.add('error')
+        document.querySelector('input#btn-verificar').style.display = 'none'
     }
-    else if(n2.value >= 0 && n1.value >= 0){
+    else if(parseInt(n2.value) >= 0 && parseInt(n1.value) >= 0){
         document.getElementById('valor_negativo').style.display = 'none'
-        n2.classList.remove('error')
-        n2.classList.remove('valores-iguais')
-        n2.classList.remove('sucess')
+        document.querySelector('input#btn-verificar').style.display = 'block'
     }
 
-    if(n2.value >= 0){
+    if(parseInt(n2.value) >= 0){
         n2.classList.remove('error')
         n2.classList.remove('valores-iguais')
         n2.classList.remove('sucess')
@@ -73,7 +73,7 @@ n2.addEventListener('keyup', function(y){ //validação se o valor (B) é negati
 })
 
 function validar(){ //validação principal
-    if(n1.value > n2.value){ 
+    if(parseInt(n1.value) > parseInt(n2.value)){ 
         //removendo itens de valores iguais
         document.getElementById('igual-message').style.display = 'none'
         n1.classList.remove('valores-iguais')
@@ -88,7 +88,7 @@ function validar(){ //validação principal
         document.getElementById('error-message').style.display = 'block'
         n1.classList.add('error')
     }
-    else if(n2.value > n1.value){
+    else if(parseInt(n2.value) > parseInt(n1.value)){
         //removendo itens de valores iguais
         document.getElementById('igual-message').style.display = 'none'
         n1.classList.remove('valores-iguais')
