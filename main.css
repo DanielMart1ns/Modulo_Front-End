@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Comfortaa:wght@400;700&family=Great+Vibes&family=Roboto&display=swap');
+
+
+/*Header*/
+
+header{
+    padding: 30px 0;
+    text-align: center;
+    color: #0c0cb1; 
+}
+
+header span{
+    font-size: 30px !important;
+}
+
+header h1{
+    font-weight: 540;
+}
+
+/*Section: Dados*/
+
+section.dados{
+    width: 450px;
+    margin: 30px auto;
+    padding: 17px;
+    border: 2px solid #3c42e0;
+    border-radius: 10px;
+    color: #0c0cb1;
+    font-family: 'Comfortaa', sans-serif;
+    display: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
+}
+
+h2{
+    font-weight: 700;
+}
+
+hr{
+    margin-bottom: 15px;
+    height: 4px;
+    background-color: #3c42e0;
+    border: 1px solid #3c42e0;
+    border-radius: 50px;
+}
+
+form label, input{
+    display: block;
+}
+
+form label{
+    color: #3c42e0;
+    font-weight: 700;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+form input{
+    width: 300px;
+    height: 29px;
+    padding: 5px;
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+    border: 1px solid #0c0cb1;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.285);
+    outline-color: #0c0cb1;
+}
+
+form input:focus{
+    border: 2px solid;
+}
+
+input#tel{
+    width: 120px;
+}
+
+input#cpf{
+    width: 120px;
+}
+
+.organizar{
+    display: inline-block;
+    margin-right: 55px;
+}
+
+/*botões*/
+.botoes{
+    margin-top: 20px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#btn-comecar{
+    display: block;
+    margin: auto;
+    width: 150px;
+    border: 2px solid #0c0cb1;
+    background-color: #373de7;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#btn-comecar:hover{
+    border: 2px solid #0c0cb1;
+    background-color: #4c51d8;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#btn-avancar{
+    border: 2px solid #0c0cb1;
+    background-color: #adafee;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#btn-avancar:hover{
+    background-color: #6d70dd;
+    transform: translate(-2px, -2px);
+    transition: transform 0.2s;
+}
+
+#btn-cancelar{
+    border: 2px solid #f21616;
+    background-color: #f04848;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#btn-cancelar:hover{
+    background-color: #be2727;
+    transform: translate(-2px, -2px);
+    transition: transform 0.2s;
+}
+
+section#dados-endereco{
+    display: none;
+}

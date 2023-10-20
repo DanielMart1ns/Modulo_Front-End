@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/receipt_long_mod.png" type="image/x-icon">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined">task_alt</span>
+        <h1>Cadastro</h1>
+    </header>
+    
+    <main>
+        <button id="btn-comecar">Começar</button>
+
+        <section class="dados" class="dados-pessoais">
+            <form autocomplete="off" class="dados-pessoais">
+                <h2>Dados Pessoais</h2>
+                <hr>
+
+                <label for="primeiroNome">Nome</label>
+                <input type="text" name="primeiroNome" id="primeiroNome" placeholder="Primeiro Nome">
+
+                <label for="segundoNome">Sobrenome</label>
+                <input type="text" name="segundoNome" id="segundoNome" placeholder="Sobrenome">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+
+                <div class="organizar">
+                    <label for="tel">Celular</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+
+                <div class="organizar">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf">
+                </div>
+            
+                <h2>Endereço Completo</h2>
+                <hr>
+
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado" placeholder="Nome do Estado">
+
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Nome da Cidade">
+
+                <label for="rua">Nome da Rua</label>
+                <input type="text" name="rua" id="rua" placeholder="Nome da Rua">
+
+                <label for="n_residencia">N° Residência</label>
+                <input type="number" name="nResidencia" id="n_residencia" placeholder="N° da Residência">
+
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" placeholder="Casa 2 / n° apto (opcional)">
+
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep">
+
+                <div class="botoes">
+                    <button type="submit" id="btn-avancar">Próximo</button>
+                    <button type="reset" id="btn-cancelar">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!--Mask-->
+    <script src="js/jquery.mask.min.js"></script>
+
+    <!--validate-->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.js"></script>
+
+    <!--Code-->
+    <script src="js/main.js"></script>
+</body>
+</html>
