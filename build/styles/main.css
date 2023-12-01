@@ -1,0 +1,2 @@
+body{background-color:#ffe2e2;font-family:sans-serif}body header{text-align:center}body header h1{color:red}body main h2{color:#870303}body main div{display:grid;grid-template-columns:repeat(3, 30%);column-gap:5%;row-gap:2%}body main div img{max-width:100%;border-radius:20px}body main div .img-maiores{width:100%;height:50%}
+/*# sourceMappingURL=maps/main.css.map */

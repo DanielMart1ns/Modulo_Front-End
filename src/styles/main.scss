@@ -1,0 +1,33 @@
+@use 'variaveis';
+
+body{
+    background-color: variaveis.$cor-de-fundo;
+    font-family: variaveis.$fonte;
+
+        header{
+            text-align: center;
+            h1{
+                color: variaveis.$cor-h1;
+            }
+        }
+
+        main{
+            h2{
+                color: variaveis.$cor-h2;
+            }
+            div{
+                display: grid;
+                grid-template-columns: repeat(3, 30%);
+                column-gap: 5%;
+                row-gap: 2%;
+                img{
+                    max-width: 100%;
+                    border-radius: 20px;
+                }
+                .img-maiores{
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+        }
+}
