@@ -1,0 +1,16 @@
+{
+  "name": "modulo_front-end",
+  "version": "1.0.0",
+  "description": "Repositório para adição de exercicios propostos",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass estilos/main.scss estilos/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.7"
+  }
+}
