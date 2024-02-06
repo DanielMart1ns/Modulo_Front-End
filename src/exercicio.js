@@ -27,7 +27,7 @@ for(let i=0; i<nomes.length; i++){
 //Filtrando dados (notas >= 6)
 
 const aprovados = dados.filter((aluno)=>{
-    return aluno.nota > 5
+    return aluno.nota >= 6 
 })
 console.log('Lista de Aprovados(as)')
 console.log(aprovados)
